@@ -26,6 +26,12 @@
             android:name=".OptionsPage"
             android:exported="false" />
         <activity
+            android:name=".ProfileInfo"
+            android:exported="false" />
+        <activity
+            android:name=".vabb"
+            android:exported="false" />
+        <activity
             android:name=".VerificationPage"
             android:exported="false" />
         <activity

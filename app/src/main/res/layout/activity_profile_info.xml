@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileInfo">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+      <ImageView
+          android:id="@+id/profile_icon"
+          android:layout_width="match_parent"
+          android:layout_height="347dp"
+          android:layout_marginTop="20dp"
+          android:contentDescription="profile picture icon"
+          android:scaleType="centerCrop"
+          app:layout_constraintBottom_toTopOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:srcCompat="@drawable/ic_action_name" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="15dp"
+              android:text="Antal Semsester dagar"
+              android:textColor="@color/black"
+              android:textSize="20dp"
+              android:textStyle="bold"></TextView>
+
+          <TextView
+              android:id="@+id/days_view"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="100dp"
+              android:hint="5"
+              android:textColor="@color/black"
+              android:textSize="20dp"
+              android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp"
+              android:layout_marginTop="15dp"
+              android:text="Antal flex timmar"
+              android:textColor="@color/black"
+              android:textSize="20dp"
+              android:textStyle="bold"></TextView>
+
+          <TextView
+              android:id="@+id/Hours_view"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="100dp"
+              android:hint="5"
+              android:textColor="@color/black"
+              android:textSize="20dp"
+              android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Förnamn: "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            ></TextView>
+
+        <TextView
+            android:id="@+id/firstname_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="förname "
+            android:textSize="20dp"
+            android:textStyle="italic"
+
+            ></TextView>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Efternamn: "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            ></TextView>
+
+        <TextView
+
+            android:id="@+id/SecondName_View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="efternamn "
+            android:textSize="20dp"
+            android:textStyle="italic"
+
+            ></TextView>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            ></TextView>
+
+        <TextView
+
+            android:id="@+id/Email_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="exampel@exampel.com "
+            android:textSize="20dp"
+            android:textStyle="italic"
+
+            ></TextView>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Min ID: "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            ></TextView>
+
+        <TextView
+
+            android:id="@+id/id_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="5od"
+            android:textSize="20dp"
+            android:textStyle="italic"
+
+
+            ></TextView>
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="password: "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/password_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint=" password"
+            android:inputType="textPassword"
+            android:textSize="20dp"
+            android:textStyle="italic"></TextView>
+      </LinearLayout>
+
+      <TextView
+          android:layout_marginTop="5dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/black"
+          android:textStyle="bold"
+          android:textSize="20dp"
+          android:text="Nytt lösenord?"
+          android:clickable="true"
+          android:id="@+id/NewPasswordText"
+
+          ></TextView>
+
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Redigera mitt profil?"
+            android:clickable="true"
+            android:id="@+id/EditProfileText"
+            android:layout_marginBottom="10dp"
+
+            ></TextView>
+
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>
