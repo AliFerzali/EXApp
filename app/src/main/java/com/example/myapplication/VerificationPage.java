@@ -17,14 +17,17 @@ public class VerificationPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verification_page);
+        String newString;
+        Bundle extras = getIntent().getExtras();
+        newString= extras.getString("username");
         timer = new Timer();
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                Intent intent = new Intent(VerificationPage.this,OptionsPage.class);
-                startActivity(intent);
+                Intent intent = new Intent(getApplicationContext(),OptionsPage.class);
+                startActivity(intent.putExtra("username",newString));
                 finish();
             }
-        }, 3000);
+        }, 1000);
     }
 }

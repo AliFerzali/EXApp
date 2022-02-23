@@ -45,7 +45,69 @@ public class MainActivity extends AppCompatActivity {
                 password = String.valueOf(Password.getText());
                 Log.d("username",username);
                 Log.d("pass",password);
-                /*StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
+                if(username.isEmpty())
+                {
+                    User_name.setError("Mata in ditt användarnamn");
+                    User_name.requestFocus();
+                }
+                else if(password.isEmpty())
+                {
+                    Password.setError("Mata in ditt lösenord");
+                    Password.requestFocus();
+                }
+                else
+                    putdata();
+            } });
+
+        Reset_password.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }});
+    }
+    public void moveToVerification(String uname){
+        Intent intent = new Intent(this, VerificationPage.class);
+        startActivity(intent.putExtra("username",uname));
+    }
+
+
+    void putdata()
+    {
+        Handler handler = new Handler();
+        handler.post(new Runnable() {
+            @Override
+            public void run() {
+                String [] inputfields = new String[2];
+                inputfields[0]= "username";
+                inputfields[1]= "password";
+                String [] data = new String[2];
+                data[0]=username;
+                data[1]=password;
+                PutData putData = new PutData(URL,"POST",inputfields,data);
+                if(putData.startPut())
+                {   if(putData.onComplete())
+                {   String res = putData.getResult();
+                    Log.d("RESUlT",res);
+                    if(res.equals("Login succeed!"))
+                    {
+                        moveToVerification(username);
+                    }else{
+                        Toast.makeText(getApplicationContext(),"Login failed",Toast.LENGTH_SHORT).show();
+                    }
+                }else{
+                    Toast.makeText(getApplicationContext(),"On complete is not completed",Toast.LENGTH_SHORT).show();
+                }
+                }else{
+                    Toast.makeText(getApplicationContext(),"failed putting data",Toast.LENGTH_SHORT).show();
+                }
+
+
+            }
+        });
+    }
+    void login() //using the volley library
+    {
+                        /*StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         if (response.equals("Login succeed!")) {
@@ -69,54 +131,5 @@ public class MainActivity extends AppCompatActivity {
                 };
                 RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
                 requestQueue.add(stringRequest);*/
-                putdata();
-
-
-            } });
-
-        Reset_password.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }});
-    }
-    public void moveToVerification(){
-        Intent intent = new Intent(this, VerificationPage.class);
-        startActivity(intent);
-    }
-
-    void putdata()
-    {
-        Handler handler = new Handler();
-        handler.post(new Runnable() {
-            @Override
-            public void run() {
-                String [] inputfields = new String[2];
-                inputfields[0]= "username";
-                inputfields[1]= "password";
-                String [] data = new String[2];
-                data[0]=username;
-                data[1]=password;
-                PutData putData = new PutData(URL,"POST",inputfields,data);
-                if(putData.startPut())
-                {   if(putData.onComplete())
-                {   String res = putData.getResult();
-                    Log.d("RESUlT",res);
-                    if(res.equals("Login succeed!"))
-                    {
-                        moveToVerification();
-                    }else{
-                        Toast.makeText(getApplicationContext(),"Login failed",Toast.LENGTH_SHORT).show();
-                    }
-                }else{
-                    Toast.makeText(getApplicationContext(),"On complete is not completed",Toast.LENGTH_SHORT).show();
-                }
-                }else{
-                    Toast.makeText(getApplicationContext(),"failed putting data",Toast.LENGTH_SHORT).show();
-                }
-
-
-            }
-        });
     }
 }
