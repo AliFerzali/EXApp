@@ -10,6 +10,7 @@ import android.widget.Toast;
 public class OptionsPage extends AppCompatActivity {
     Button Distans;
     Button semester;
+    Button Vabb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,12 +22,22 @@ public class OptionsPage extends AppCompatActivity {
             public void onClick(View v) {
                 moveToDistansPage();
             }});
+
         semester = (Button)findViewById(R.id.semesteransokan_button);
         semester.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 moveToSemesterAnsokaPage();
             }});
+
+        Vabb = (Button)findViewById(R.id.vabb_button);
+        Vabb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                moveToVabb();
+            }
+        });
+
     }
     public void  moveToDistansPage(){
         Intent intent = new Intent(this, DistansPage.class);
@@ -34,6 +45,10 @@ public class OptionsPage extends AppCompatActivity {
     }
     public void  moveToSemesterAnsokaPage(){
         Intent intent = new Intent(this, SemesterAnsokaPage.class);
+        startActivity(intent);
+    }
+    public void  moveToVabb(){
+        Intent intent = new Intent(this, vabb.class);
         startActivity(intent);
     }
 }
