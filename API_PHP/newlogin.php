@@ -1,10 +1,7 @@
 <?php
-$host = "localhost";
-$username = "root";
-$password = "";
-$databasename = "askas";
-
-$newconnection=mysqli_connect($host,$username,$password,$databasename);
+require "dbConfig.php";
+$db = new dbConfig();
+$newconnection=mysqli_connect($db->host,$db->username,$db->password,$db->databasename);
 
 $uname = $_POST['username'];
 $pword = $_POST['password'];
