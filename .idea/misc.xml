@@ -3,13 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/max-f/StudioProjects/EXApp/app/src/main/res/layout/activity_distans_page.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/max-f/StudioProjects/EXApp/app/src/main/res/layout/activity_end_distans.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/max-f/StudioProjects/EXApp/app/src/main/res/layout/activity_new_password.xml" value="0.1" />
+        <entry key="..\:/Users/max-f/StudioProjects/EXApp/app/src/main/res/layout/activity_options_page.xml" value="0.14947916666666666" />
+        <entry key="..\:/Users/max-f/StudioProjects/EXApp/app/src/main/res/layout/activity_semester_ansoka_page.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/max-f/StudioProjects/EXApp/app/src/main/res/layout/activity_semester_info.xml" value="0.24547101449275363" />
         <entry key="..\:/Users/max-f/StudioProjects/EXApp/app/src/main/res/layout/activity_vabb.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/max-f/StudioProjects/EXApp/app/src/main/res/layout/activity_verification_distans.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/max-f/StudioProjects/EXApp/app/src/main/res/layout/semesterinfofler.xml" value="0.29683698296836986" />
         <entry key="..\:/Users/yazan/AndroidStudioProjects/MyNewApp/app/src/main/res/layout/activity_distans_page.xml" value="0.371875" />
-        <entry key="..\:/Users/yazan/AndroidStudioProjects/MyNewApp/app/src/main/res/layout/activity_edit_profile.xml" value="0.22" />
-        <entry key="..\:/Users/yazan/AndroidStudioProjects/MyNewApp/app/src/main/res/layout/activity_main.xml" value="0.259375" />
-        <entry key="..\:/Users/yazan/AndroidStudioProjects/MyNewApp/app/src/main/res/layout/activity_new_password.xml" value="0.259375" />
-        <entry key="..\:/Users/yazan/AndroidStudioProjects/MyNewApp/app/src/main/res/layout/activity_options_page.xml" value="0.259375" />
-        <entry key="..\:/Users/yazan/AndroidStudioProjects/MyNewApp/app/src/main/res/layout/activity_profile_info.xml" value="0.259375" />
         <entry key="..\:/Users/yazan/AndroidStudioProjects/MyNewApp/app/src/main/res/layout/activity_verification_distans.xml" value="0.371875" />
         <entry key="..\:/Users/yazan/AndroidStudioProjects/MyNewApp/app/src/main/res/layout/activity_verification_page.xml" value="0.15625" />
         <entry key="app/src/main/res/layout/activity_distans_page.xml" value="0.1" />

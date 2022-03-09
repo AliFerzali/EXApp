@@ -30,7 +30,7 @@ public class OptionsPage extends AppCompatActivity {
         semester.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                moveToSemesterAnsokaPage();
+                moveToSemesterAnsokaPage(newString);
             }});
         profileButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,9 +50,9 @@ public class OptionsPage extends AppCompatActivity {
         Intent intent = new Intent(this, DistansPage.class);
         startActivity(intent);
     }
-    public void  moveToSemesterAnsokaPage(){
+    public void  moveToSemesterAnsokaPage(String username){
         Intent intent = new Intent(this, SemesterAnsokaPage.class);
-        startActivity(intent);
+        startActivity(intent.putExtra("username",username));
     }
     private void moveToProfile(String uname)
     {
