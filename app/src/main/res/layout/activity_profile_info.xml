@@ -15,12 +15,14 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
 
+
         >
 
       <ImageView
           android:id="@+id/profile_icon"
-          android:layout_width="match_parent"
-          android:layout_height="347dp"
+          android:layout_width="313dp"
+          android:layout_height="272dp"
+          android:layout_gravity="center"
           android:layout_marginTop="20dp"
           android:contentDescription="profile picture icon"
           android:scaleType="centerCrop"
@@ -35,56 +37,61 @@
           android:layout_height="wrap_content"
           android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
 
-          <TextView
+          <LinearLayout
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:layout_marginTop="15dp"
-              android:text="Antal Semsester dagar"
-              android:textColor="@color/black"
-              android:textSize="20dp"
-              android:textStyle="bold"></TextView>
+              android:orientation="vertical">
 
-          <TextView
-              android:id="@+id/days_view"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:layout_marginLeft="100dp"
-              android:hint="5"
-              android:textColor="@color/black"
-              android:textSize="20dp"
-              android:textStyle="bold"></TextView>
-        </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Antal Semsester dagar"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            <TextView
+                android:id="@+id/days_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:hint="5"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+          </LinearLayout>
 
-          <TextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:layout_marginLeft="20dp"
-              android:layout_marginTop="15dp"
-              android:text="Antal flex timmar"
-              android:textColor="@color/black"
-              android:textSize="20dp"
-              android:textStyle="bold"></TextView>
 
-          <TextView
-              android:id="@+id/Hours_view"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:layout_marginLeft="100dp"
-              android:hint="5"
-              android:textColor="@color/black"
-              android:textSize="20dp"
-              android:textStyle="bold"></TextView>
-        </LinearLayout>
+
+         >
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="15dp"
+               android:text="Antal flex timmar"
+               android:textColor="@color/black"
+               android:textSize="20dp"
+               android:textStyle="bold"></TextView>
+
+           <TextView
+               android:id="@+id/Hours_view"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="100dp"
+               android:hint="5"
+               android:textColor="@color/black"
+               android:textSize="20dp"
+               android:textStyle="bold"></TextView>
+         </LinearLayout>
+
 
       </LinearLayout>
 
@@ -240,10 +247,7 @@
           ></TextView>
 
 
-      <LinearLayout
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:orientation="horizontal">
+
 
         <TextView
             android:layout_marginTop="5dp"
@@ -255,11 +259,21 @@
             android:text="Redigera mitt profil?"
             android:clickable="true"
             android:id="@+id/EditProfileText"
-            android:layout_marginBottom="10dp"
+
 
             ></TextView>
-
-      </LinearLayout>
+          <TextView
+              android:layout_marginTop="5dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/black"
+              android:textStyle="bold"
+              android:textSize="20dp"
+              android:text="Lägg till säkerhets frågor!"
+              android:clickable="true"
+              android:id="@+id/securityQues"
+              android:layout_marginBottom="10dp"
+              ></TextView>
     </LinearLayout>
   </ScrollView>
 </LinearLayout>

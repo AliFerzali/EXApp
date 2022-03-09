@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string-array name="SecurityQuestions">
+        <item>Välj en av följande frågor</item>
+        <item>Vad hete din favorita lärare?</item>
+        <item>Vad är din favorita film?</item>
+        <item>Vad var märket på din första bil?</item>
+        <item>I vilket stad föddes du?</item>
+        <item>Vad är din astrologiskt tecken?</item>
+    </string-array>
 </resources>
