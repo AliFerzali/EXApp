@@ -70,7 +70,7 @@ public class ProfileInfo extends AppCompatActivity {
         Edit_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent( getApplicationContext(),EditProfileActivity.class));
+                startActivity(new Intent( getApplicationContext(),EditProfileActivity.class).putExtra("username",newString));
             }
         });
         new_password.setOnClickListener(new View.OnClickListener() {

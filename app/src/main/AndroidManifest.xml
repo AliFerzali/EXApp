@@ -14,6 +14,15 @@
             android:name=".SemesterAnsokaPage"
             android:exported="false" />
         <activity
+            android:name=".EditProfileActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".semesterInfo"
+            android:exported="false"/>
+        <activity
+            android:name=".SemesterinfoflerActivity"
+            android:exported="false"/>
+        <activity
             android:name=".EndDistans"
             android:exported="false" />
         <activity
@@ -34,6 +43,15 @@
         <activity
             android:name=".VerificationPage"
             android:exported="false" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".SetNewPassword"
+            android:exported="false"/>
+        <activity
+            android:name=".SetSecQuestions"
+            android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

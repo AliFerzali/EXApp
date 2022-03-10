@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EditProfileActivity">
+    tools:context=".EditProfileActivity"
+    >
 
     <ScrollView
         android:layout_width="match_parent"
@@ -14,7 +15,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TextView
@@ -29,7 +30,8 @@
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="ex. Johan"></EditText>
+                android:hint="ex. Johan"
+                android:id="@+id/Editfirstname"></EditText>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -43,7 +45,8 @@
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="ex. Johansson"></EditText>
+                android:hint="ex. Johansson"
+                android:id="@+id/EditLastname"></EditText>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -57,7 +60,8 @@
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="ex. Johanjohansson@gmail.com"></EditText>
+                android:hint="ex. Johanjohansson@gmail.com"
+                android:id="@+id/EditEmail"></EditText>
             <Button
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_marginTop="15dp"
@@ -67,6 +71,17 @@
                 android:background="@color/orange"
                 android:id="@+id/EditSubmitButton"
                 ></Button>
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:id="@+id/progressbar"
+                android:visibility="invisible"
+                ></ProgressBar>
+
         </LinearLayout>
+
     </ScrollView>
+
 </LinearLayout>

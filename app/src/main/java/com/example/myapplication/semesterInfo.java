@@ -34,7 +34,7 @@ public class semesterInfo extends AppCompatActivity {
         setContentView(R.layout.activity_semester_info);
         Bundle extras = getIntent().getExtras();
         username= extras.getString("username");
-        URL = "http://192.168.10.156/API/API/semester.php";
+        URL = "http://192.168.56.1/API/semester.php";
         editText=(EditText)findViewById(R.id.datum);
         ok_button = (Button)findViewById(R.id.semester_ok_Button);
         datum = (TextView)findViewById(R.id.summary);
