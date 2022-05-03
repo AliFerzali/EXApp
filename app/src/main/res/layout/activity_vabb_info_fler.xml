@@ -80,8 +80,8 @@
             android:layout_height="117dp"
             android:clickable="false"
             android:editable="false"
-            android:text="Semesteransökan\n Flera dagar"
-            android:background="@color/purple_200"
+            android:text="Vabbansökan\n Flera dagar"
+            android:background="@color/blue"
             android:textAlignment="center"
             android:textColor="#0C0C0C"
             android:textSize="20dp"
@@ -93,12 +93,12 @@
             />
 
         <EditText
-            android:id="@+id/startDatum"
+            android:id="@+id/vabbStartDatum"
             android:clickable="false"
             android:cursorVisible="false"
             android:focusable="false"
             android:focusableInTouchMode="false"
-            android:hint="Välj start Datum: "
+            android:hint="Välj startdatum: "
             android:textSize="25dp"
             android:textStyle="bold"
             android:textColorHint="@color/blue"
@@ -107,12 +107,12 @@
             tools:ignore="InvalidId"
             android:inputType="date" />
         <EditText
-            android:id="@+id/slutDatum"
+            android:id="@+id/vabbSlutDatum"
             android:clickable="false"
             android:cursorVisible="false"
             android:focusable="false"
             android:focusableInTouchMode="false"
-            android:hint="Välj slut Datum: "
+            android:hint="Välj slutdatum: "
             android:textSize="25dp"
             android:textStyle="bold"
             android:textColorHint="@color/blue"
@@ -121,7 +121,7 @@
             tools:ignore="InvalidId"
             android:inputType="date" />
         <EditText
-            android:id="@+id/semesterFler_edit_text"
+            android:id="@+id/vabbFler_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Meddelande"
@@ -134,7 +134,7 @@
 
 
         <Button
-            android:id="@+id/semester_ok_Button"
+            android:id="@+id/vabb_ok_Button"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -145,7 +145,7 @@
             android:textStyle="bold"
             android:textAlignment="center"
             android:text="OK"
-            android:background="@color/purple_200"/>
+            android:background="@color/blue"/>
 
     </LinearLayout>
 

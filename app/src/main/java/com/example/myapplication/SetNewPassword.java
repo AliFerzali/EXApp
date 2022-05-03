@@ -14,7 +14,7 @@ public class SetNewPassword extends AppCompatActivity {
     EditText newPassword, verifyingPassword;
     String newString;
     Button btn;
-    String URL = "http://192.168.56.1/API/PasswordUpdate.php";
+    String URL = "http://193.10.223.254/API/API/PasswordUpdate.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

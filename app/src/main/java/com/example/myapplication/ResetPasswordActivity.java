@@ -17,7 +17,7 @@ public class ResetPasswordActivity extends AppCompatActivity {
     EditText FirstAnswer,SecondAnswer,ThirdAnswer,Uname;
     String username;
     Button SubmitButton;
-    private final String URL = "http://192.168.56.1/API/GetSecAnswers.php";
+    private final String URL = "http://193.10.223.6/API/API/GetSecAnswers.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

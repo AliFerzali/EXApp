@@ -1,27 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
+
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-        android:theme="@style/Theme.MyApplication">
+        android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".vabbInfoFler"
+            android:exported="false" />
+        <activity
+            android:name=".vabbInfo"
+            android:exported="false" />
+        <activity
+            android:name=".sjukfranvaro_anpassaTid"
+            android:exported="false" />
+        <activity
+            android:name=".sjukfranvaro_heldag_info"
+            android:exported="false" />
+        <activity
+            android:name=".sjukfranvaro_heldag"
+            android:exported="false" />
+        <activity
+            android:name=".sjukfranvaro_ansoka"
+            android:exported="false" />
         <activity
             android:name=".SemesterAnsokaPage"
             android:exported="false" />
         <activity
             android:name=".EditProfileActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".semesterInfo"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".SemesterinfoflerActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".EndDistans"
             android:exported="false" />
@@ -45,13 +65,13 @@
             android:exported="false" />
         <activity
             android:name=".ResetPasswordActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".SetNewPassword"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".SetSecQuestions"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         Reset_password = (Button)findViewById(R.id.reset_pass_button);
         User_name = (EditText) findViewById(R.id.username_field);
         Password = (EditText) findViewById(R.id.password_field);
-        URL = "http://192.168.56.1/API/newlogin.php";
+        URL = "http://192.168.0.9/API/API/newlogin.php";
 
         Sign_in.setOnClickListener(new View.OnClickListener(){
             @Override

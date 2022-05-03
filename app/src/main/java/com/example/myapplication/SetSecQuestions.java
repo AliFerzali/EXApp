@@ -17,7 +17,7 @@ public class SetSecQuestions extends AppCompatActivity {
     EditText FirstAnswer,SecondAnswer,ThirdAnswer;
     String Uname;
     Button SubmitButton;
-    private final String URL = "http://192.168.56.1/API/SetSecAnswers.php";
+    private final String URL = "http://193.10.223.6/API/API/SetSecAnswers.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

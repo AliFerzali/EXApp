@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OptionsPage">
+    tools:context=".DistansPage">
     <ScrollView
-        android:id="@+id/scrollView2"
+        android:id="@+id/scrollView3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,7 +23,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
-                android:id="@+id/icons_layout"
+                android:id="@+id/icons_layout_distans"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:orientation="vertical"
@@ -43,12 +42,12 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <Button
-                        android:id="@+id/back_to_start_button"
+                        android:id="@+id/back_button"
                         style="?android:attr/borderlessButtonStyle"
                         android:layout_width="50dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="Start"
+                        android:text="Tillbaka"
                         android:textAlignment="textStart"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -94,14 +93,13 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/icons_layout"
                 app:layout_constraintTop_toTopOf="parent">
-
                 <Button
                     android:id="@+id/vabb_button"
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
-                    android:background="@color/blue"
                     android:text="Vabb"
+                    android:background="@color/blue"
                     android:textAlignment="center"
                     android:textColor="#0C0C0C"
                     android:textSize="40dp"
@@ -111,45 +109,13 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <LinearLayout
-                    android:id="@+id/vabb_layout"
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:orientation="horizontal"
-                    app:layout_constraintBottom_toTopOf="@+id/installningar_button"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/semesteransokan_button"
-                    app:layout_constraintTop_toTopOf="parent">
-                    <Button
-                        android:id="@+id/vabbOneDay_button"
-                        android:layout_width="210dp"
-                        android:layout_height="match_parent"
-                        android:text="En dag"
-                        app:layout_constraintEnd_toStartOf="@+id/days_button"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"/>
-
-                    <Button
-                        android:id="@+id/VabbManydays_button"
-                        android:layout_width="210dp"
-                        android:layout_height="match_parent"
-                        android:text="Flera dagar"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/day_button"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"/>
-
-                </LinearLayout>
-
                 <Button
                     android:id="@+id/flex_button"
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
-                    android:background="@color/green"
                     android:text="Flex"
+                    android:background="@color/green"
                     android:textAlignment="center"
                     android:textColor="#101010"
                     android:textSize="40dp"
@@ -158,14 +124,13 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/vabb_button" />
-
                 <Button
                     android:id="@+id/sjukfranvaro_button"
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
-                    android:background="@color/green1"
                     android:text="Sjukfrånvaro"
+                    android:background="@color/green1"
                     android:textAlignment="center"
                     android:textColor="#0B0A0A"
                     android:textSize="40dp"
@@ -175,13 +140,63 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/flex_button" />
 
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+                        <EditText
+                            android:id="@+id/internMeddelande_edit_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="75dp"
+                            android:inputType="text"
+                            android:hint="Meddelande (Intern)"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/distans_skicka_button"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+                        </EditText>
+                        <EditText
+                            android:id="@+id/externMeddelande_edit_text"
+                            android:layout_width="fill_parent"
+                            android:layout_height="75dp"
+                            android:inputType="text"
+                            android:hint="Meddelande (extern)"
+                            android:textAlignment="center"
+                            app:layout_constraintBottom_toTopOf="@+id/distans_skicka_button"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+                        </EditText>
+
+                        <Button
+                            android:id="@+id/sjukfranvaro_send_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:textAlignment="center"
+                            android:text="Skicka"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/distans_edit_text">
+
+                        </Button>
+
+                    </LinearLayout>
+
+
+
                 <Button
                     android:id="@+id/distansarbete_button"
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
-                    android:background="@color/orange"
                     android:text="Distansarbete"
+                    android:background="@color/orange"
                     android:textAlignment="center"
                     android:textColor="#0E0E0E"
                     android:textSize="40dp"
@@ -191,13 +206,14 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/sjukfranvaro_button" />
 
+
                 <Button
                     android:id="@+id/semesteransokan_button"
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
-                    android:background="@color/purple_200"
                     android:text="Semesteransökan"
+                    android:background="@color/purple_200"
                     android:textAlignment="center"
                     android:textColor="#131313"
                     android:textSize="30dp"
@@ -212,8 +228,8 @@
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
-                    android:background="@color/violet"
                     android:text="Inställningar"
+                    android:background="@color/violet"
                     android:textAlignment="center"
                     android:textColor="#0E0E0E"
                     android:textSize="40dp"
@@ -222,13 +238,8 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/semesteransokan_button" />
-
-
-
-
             </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>
-

@@ -184,7 +184,7 @@
                     </EditText>
 
                     <Button
-                        android:id="@+id/distans_skicka_button"
+                        android:id="@+id/distans_send_button"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:textAlignment="center"

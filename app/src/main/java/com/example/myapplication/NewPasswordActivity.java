@@ -13,7 +13,7 @@ import android.widget.Toast;
 public class NewPasswordActivity extends AppCompatActivity {
 EditText password,confirmation;
 Button submit;
-private final String URL = "http://192.168.56.1/API/PasswordUpdate.php";
+private final String URL = "http://193.10.223.115/API/API/PasswordUpdate.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

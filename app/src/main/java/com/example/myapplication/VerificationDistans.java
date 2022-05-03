@@ -9,11 +9,14 @@ import android.widget.Toast;
 
 public class VerificationDistans extends AppCompatActivity {
     Button OK, Back;
+    String username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verification_distans);
+        Bundle extras = getIntent().getExtras();
+        username= extras.getString("username");
         OK = (Button)findViewById(R.id.distans_ok_Button);
         Back = (Button)findViewById(R.id.back_button);
         OK.setOnClickListener(new View.OnClickListener(){
@@ -25,12 +28,12 @@ public class VerificationDistans extends AppCompatActivity {
             @Override
             public void onClick(View v){
 
-                moveToOptionsPage();
+                moveToOptionsPage(username);
             } });
     }
-    public void moveToOptionsPage(){
+    public void moveToOptionsPage(String str){
         Intent intent = new Intent(this, OptionsPage.class);
-        startActivity(intent);
+        startActivity(intent.putExtra("username",str));
     }
     public void moveToEndDistans(){
         Intent intent = new Intent(this, EndDistans.class);

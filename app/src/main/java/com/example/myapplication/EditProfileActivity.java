@@ -15,7 +15,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class EditProfileActivity extends AppCompatActivity {
-private final String URL = "http://192.168.56.1/API/UpdateProfile.php";
+private final String URL = "http://193.10.223.115/API/API/UpdateProfile.php";
 EditText firstname,lastname,email;
 Button SubmitButton;
 ProgressBar bar;

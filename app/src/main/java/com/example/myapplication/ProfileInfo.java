@@ -47,8 +47,8 @@ public class ProfileInfo extends AppCompatActivity {
         newString= extras.getString("username");
         Log.d("UserName", "init: "+ newString);
         Edit_text = findViewById(R.id.EditProfileText);
-        URL="http://192.168.56.1/API/profileInfo.php";
-        URL2="http://192.168.56.1/API/CheckSecQues.php";
+        URL="http://193.10.223.115/API/API/profileInfo.php";
+        URL2="http://193.10.223.115/API/API/CheckSecQues.php";
         F_name = (TextView) findViewById(R.id.firstname_view);
         S_name = (TextView) findViewById(R.id.SecondName_View);
         email = (TextView) findViewById(R.id.Email_view);
